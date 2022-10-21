@@ -1,0 +1,470 @@
+body {
+    margin:0;
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Fade In Animation */
+.welcomeScreen {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+/* For different Browser */
+	@keyframes fadeIn {
+  		0% { opacity: 0; }
+  		100% { opacity: 1; }
+	}
+	@-moz-keyframes fadeIn {
+  		0% { opacity: 0; }
+  		100% { opacity: 1; }
+	}
+	@-webkit-keyframes fadeIn {
+  		0% { opacity: 0; }
+  		100% { opacity: 1; }
+	}
+	@-o-keyframes fadeIn {
+  		0% { opacity: 0; }
+  		100% { opacity: 1; }
+	}
+	@-ms-keyframes fadeIn {
+  		0% { opacity: 0; }
+  		100% { opacity: 1; }
+}
+
+/* Scroll fade in */
+	/* .tag {
+		opacity: 0;
+		transform: translate(0, 10vh);
+		transition: all 1s;
+	}
+
+	.tag.visible {
+	opacity: 1;
+	transform: translate(0, 0);
+} */
+
+/* Pages01 */
+#section-1{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-color: #fafafa;
+	font-family: sans-serif;
+	color: rgb(48, 43, 43);
+}
+
+/* Scroll down button */
+	/* Frame */
+	a#scroll-button {
+		position: absolute;
+		height: 2vw;
+		width: 6.25vw;
+		/* border: 0.5em solid; */
+		margin: auto;
+		left: 90%;
+		right: 0;
+		bottom: 10%;
+		/* border-radius: 3em; */
+	}
+	
+	/* Indicator */
+	a#scroll-button:before{
+		position: absolute;
+		content: "";
+		margin: auto;
+		height: 1em;
+		width: 100%;
+		bottom: 1;
+		background-color: rgb(48, 43, 43);
+		border-radius: 3em;
+		animation: move-down 2s infinite;
+	}
+	/* Animation */
+	@keyframes move-down {
+		80% {
+			opacity: 0.5;
+		}
+		100% {
+			transform: translateY(2vw);
+			opacity: 0;
+		}
+	}
+
+	/* Instructions */
+	a#scroll-button:after{
+		position: absolute;
+		content: "SCROLL DOWN";
+		display: block;
+		width: 12vw;
+		text-align: center;
+		left: -2.7vw;
+		bottom: -2.5vw;
+		font-size: 0.7vw;
+		letter-spacing: 0.2vw;
+		font-weight: 600;
+		color: rgb(48, 43, 43);;
+}
+
+/* Page 00 */
+.welcomeScreen{
+    display: flex;
+}
+
+	/* IMPACT OF BUSHFIRES */
+	h1{
+    font-size: 10vw;
+    padding: 5vw;
+    color: rgb(48, 43, 43);
+}
+
+/* Page 01 */
+	section#section-2{
+	height: 50vh;
+    display: flex;
+    background-color: #fafafa;
+	font-family: sans-serif;
+	color: rgb(48, 43, 43);
+}
+
+	.wrapper01 {
+		margin: 2% 0 0 0;
+		width: 50%;
+		/* background-color: red; */
+		justify-content: center;
+	}
+
+	/* Remember */
+	#text00{
+		font-size: 5vw;
+		transform: translate(10%,0);
+	}
+
+	/* line 01 */
+	#text01{
+		font-size: 2vw;
+		font-family: 'Courier New', Courier, monospace;
+		white-space: nowrap; 
+		transform: translate(10%,0);
+	}
+
+	/* line 02 */
+	#text02{
+		font-size: 2vw;
+		font-family: 'Courier New', Courier, monospace;
+		white-space: nowrap;
+		transform: translate(10%,0);
+	}
+
+	/* image01 */
+	#image01{
+		transform: scale(50%);
+		border: 0.5em rgb(48, 43, 43) solid;
+}
+
+/* Page 02 */
+	#section-3 {
+	height: 50vh;
+    display: flex;
+    background-color: #fafafa;
+	font-family: sans-serif;
+	color: rgb(48, 43, 43);
+	}
+
+	.wrapper03 {
+		width: 100%;
+		justify-content: center;
+		margin: 0 3% 0 3%;
+	}
+
+	#text03{
+		font-size: 2vw;
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+	.column {
+		float: left;
+		width: 33.33%;
+		/* background: red; */
+		text-align: center;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#text04 {
+		font-size: 1vw;
+		font-family: 'Courier New', Courier, monospace;
+}
+
+/* Page 03 */
+	#section-4 {
+		height: 30vh;
+		display: flex;
+		background-color: #fafafa;
+		font-family: sans-serif;
+		color: rgb(48, 43, 43);
+	}
+
+	.wrapper04 {
+		/* background-color: red; */
+		margin: 1% 0 90% 2%;
+		
+	}
+
+	#text05 {
+		font-size: 2vw;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);	
+	}
+
+	.wrapper05 {
+		width: 85%;
+		height: 50%;
+		overflow: auto;
+		/* background-color: red; */
+		display:contents;
+	}
+
+	.wrapper06{
+		width: 75%;
+		height: 50%;
+		position: relative;
+		/* background-color: red; */
+		display:contents;
+	}
+
+	.wrapper06 p{
+		margin: 0 5% 0 5%;
+		display: none;
+		width: 90%;
+		height: 45%;
+	}
+
+	.wrapper06 p.activePg {
+		display: inline-block;
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 2vw;
+	}
+
+	.prev,.next{
+		cursor: pointer;
+	}
+
+	.prev {
+		position: relative;
+		margin: 0 0 0 5vw;
+		z-index: 100;
+		/* background-color:rgba(48, 43, 43, 50%); */
+		
+		border-left: 0.5vw solid rgb(48, 43, 43);
+		border-bottom: 0.5vw solid rgb(48, 43, 43);
+		width: 2vw;
+		height: 1.7vw;
+		transform: rotate(45deg );
+	}
+
+	.next {
+		position: relative;
+		margin: 10vh 0 0 -3vw;
+		z-index: 100;
+		/* background-color:rgba(48, 43, 43, 50%); */
+		
+		border-left: 0.5vw solid rgb(48, 43, 43);
+		border-bottom: 0.5vw solid rgb(48, 43, 43);
+		width: 2vw;
+		height: 1.7vw;
+		transform: rotate(225deg);
+}
+
+/* Page 04 */
+	#section-5 {
+		height: 90vh;
+		display: flex;
+		background-color: #fafafa;
+		font-family: sans-serif;
+		color: rgb(48, 43, 43);
+	}
+
+	.wrapper07{
+		width: 100%;
+		height: 50%;
+		justify-content: center;
+	}
+
+	#text09{
+		font-size: 5vw;
+		padding: 5%;
+		/* background-color: red; */
+	}
+
+	#text10 {
+		font-family: 'Courier New', Courier, monospace;
+		padding: 5%;
+		/* background-color: red; */
+		transform: translateY(-10vh);
+		font-size: 2vw;
+	}
+
+	.row1{
+		display: flex;
+	}
+
+	.column1 {
+		margin: -15% 0 0 0;
+		flex: 50%;
+		float: left;
+		width: 33%;
+		/* background: red; */
+		/* border: 1em solid black; */
+		padding: 5%;
+		justify-content: center;
+	}
+
+	.column1 img{
+		vertical-align: middle;
+	}
+
+	.row1:after {
+		content: "";
+		display: table;
+		clear: both;
+}
+
+/* Page 05 */
+#section-6 {
+	height: 120vh;
+	display: flex;
+	background-color: #fafafa;
+	font-family: sans-serif;
+	color: rgb(48, 43, 43);
+	}
+
+	#wrapper08{
+		width: 100%;
+		justify-content: center;
+		height: 100vh;
+	}
+
+	#text11{
+		font-size: 5vw;
+		padding: 5%;
+	}
+
+	#text12 {
+		font-size: 2vw;
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+	#accordion{
+		position: relative;
+		box-shadow: 0px 1px 7px #DBDBDB;
+		width: 90%;
+		transform: translate(5%, -5%);
+	}
+	  
+	#accordion .head{
+		background-color: #FFFFFF;
+		padding: 20px 30px;
+		cursor: pointer;
+		transition: 0.2s ease;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+   
+	#accordion .content{
+		background-color: #FFFFFF;
+		display: none;
+		padding: 20px 30px;
+		color: #333333;
+		z-index: 100;
+	}
+
+/* Page 06 */
+	#section-7{
+		height: 100vh;
+		display: flex;
+		/* background-color: #fafafa; */
+		background-image:url(assets/image14.png);
+		background-color: rgba(48, 43, 43, 50%);
+		background-repeat: no-repeat;
+		background-position: center;
+		font-family: sans-serif;
+		color: #fafafa
+	}
+
+	#wrapper08{
+		width: 80%;
+		justify-content: center;
+	}
+
+	#text13{
+		font-size: 5vw;
+		padding: 5%;
+	}
+
+	#text14{
+		font-size: 2vw;
+		font-family: 'Courier New', Courier, monospace;
+		padding: 5%;	
+	}
+
+	/* Scroll up button */
+	/* Frame */
+	a#scroll-button {
+		position: absolute;
+		height: 2vw;
+		width: 6.25vw;
+		/* border: 0.5em solid; */
+		margin: auto;
+		left: 90%;
+		/* border-radius: 3em; */
+	}
+	
+	/* Indicator */
+	a#scroll-up:before{
+		position: absolute;
+		content: "";
+		margin: auto;
+		height: 1em;
+		width: 5%;
+		right: 1%;
+		background-color: #fafafa;
+		border-radius: 3em;
+		animation: move-up 2s infinite;
+	}
+	/* Animation */
+	@keyframes move-up {
+		80% {
+			opacity: 0.5;
+		}
+		100% {
+			transform: translateY(-2vw);
+			opacity: 0;
+		}
+
+	}
+
+	/* Instructions */
+	a#scroll-up:after{
+		position: absolute;
+		content: "SCROLL UP";
+		transform: translate(90vw);
+		width: 12vw;
+		text-align: center;
+		font-size: 0.7vw;
+		letter-spacing: 0.2vw;
+		font-weight: 600;
+		margin: 2% 0 0 0;
+}
